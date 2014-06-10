@@ -1,0 +1,1 @@
+<?php/**自定义公共函数**/function alert($str,$url=""){	header("Content-type: text/html; charset=utf-8"); 	echo "<script type='text/javascript'>alert('{$str}');window.location.href='".site_url($url)."';</script>";}function check_login($status){	//echo $status;exit;	if($status==0){		alert('您还没有登录','user');	}}?>
